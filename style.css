@@ -20,6 +20,11 @@ background-color: #EBF2FF;
 overflow:hidden; 
 
 }
+
+.welcomePageButtons{
+  text-align: center;
+}
+
 .navbar a {
     float: right;
     color: #0D1821;
@@ -48,3 +53,4 @@ overflow:hidden;
       text-align:center; 
       font-size: 16px; 
   }
+  
