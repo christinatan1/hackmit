@@ -5,7 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Professional Questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Professor Questionnaire</title>
 </head>
 
 <body>
@@ -14,10 +16,16 @@
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname"><br>
+        <label for="school">School:</label><br>
+        <input type="text" id="school" name="school"><br></br>
+        <p>Give yourself a little introduction!</p>
+        <label for="intro"></label>
+        <textarea id="intro" name="intro" rows="10" cols="75">
+        </textarea>
 
         <p>Select the field that your department best falls under:</p>
         <input type="radio" id="field1" name="field1" value="agriculture & natural resources conservation">
-        <label for="field1">Agricultural and Natural Resources Conservation</label><br> 
+        <label for="field1">Agricultural and Natural Resources Conservation</label><br>
         <input type="radio" id="field2" name="field2" value="architecture">
         <label for="field2">Architecture</label><br>
         <input type="radio" id="field3" name="field3" value="area, ethnic & multidisciplinary studies">
@@ -48,30 +56,31 @@
         <label for="research"></label>
         <textarea id="research" name="research" rows="10" cols="75">
         </textarea>
-        
+
+        <p>Are you currently accepting new students in your lab?</p>
+        <input type="radio" id="yes" name="yes" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="no" value="no">
+        <label for="no">No</label>
+        <br></br>
+
         <p>Add a list of the skills you're looking for in students. Enter a new line for each one.</p>
         <label for="skills"></label>
         <textarea id="skills" name="skills" rows="10" cols="75">
         </textarea>
 
         <br>
-        <p>Are you currently accepting new students in your lab?</p>
-        <input type="radio" id="yes" name="yes" value="yes">
-  <label for="yes">Yes</label><br>
-  <input type="radio" id="no" name="no" value="no">
-  <label for="no">No</label>
-  <br></br>
 
         <label for="email">Email:</label><br>
         <input type="text" id="email" name="email">
         <br>
         <label for="phone">Phone Number (##########):</label><br>
-        <input max="9999999999"type="text" id="phone" name="phone"><br>
+        <input max="9999999999" type="text" id="phone" name="phone"><br>
         <br>
         <input type="submit" value="Submit">
 
-       
-    </form> 
+
+    </form>
     </form>
 </body>
 
