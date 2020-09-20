@@ -52,6 +52,25 @@ overflow:hidden;
       color:#0D1821; 
       padding: 13px; 
       text-align:center; 
-      font-size: 16px; 
+      font-size: 15px; 
   }
-  
+
+.spacing{
+  background-color: #F2F4F8;
+padding:40px; 
+margin-left: 15vmin;
+margin-right: 15vmin;
+margin-top: 5vmin; }
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.positioning{
+  padding:40px; 
+  margin-left: 15vmin;
+  margin-right: 15vmin;
+  margin-top: 5vmin; }
+}

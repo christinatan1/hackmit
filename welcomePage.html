@@ -3,11 +3,25 @@
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel = "stylesheet" href="style.css">
-    <title>Hello World</title> 
+    <title>Welcome</title> 
   </head>
-  <body> 
+  <body onload="typeWriter()"> 
+    <script>var i = 0;
+      var text = "Welcome to ResearchMatch!"; 
+      var speed = 40; 
+
+      function typeWriter() {
+          if (i < text.length) {
+              document.getElementById("typing").innerHTML += text.charAt(i);
+              i++;
+              setTimeout(typeWriter, speed);
+          }
+      }</script>
     <div class="welcomePageButtons">
-      <h1>Welcome To ____!</h1> 
+      <h1 id ="typing" style="font-size: 50px;"> </h1> 
+      <h3>Our site is dedicated to helping you find the best connections for university research.</h3>
+      <h3>Select the description that matches who you are to get started!</h3>
+      <br> 
       <a href="studentform.html"><button class = "ui primary button">New Student</button></a>
       <a href="profform.html"><button class = "ui primary button">New Professor</button></a><br><br>
       <a href="studentLogin.html"><button class = "ui primary button">Existing Student User</button></a>
@@ -16,3 +30,4 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
   </body>
 </html>
+
