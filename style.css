@@ -23,6 +23,7 @@ overflow:hidden;
 
 .welcomePageButtons{
   text-align: center;
+  padding:50px; 
 }
 
 .navbar a {
